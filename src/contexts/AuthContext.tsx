@@ -49,7 +49,7 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
   const [user, setUser] = useState<User | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
-  // Mock users data - In production, this would come from your backend
+  // Datos de usuarios de prueba
   const mockUsers: User[] = [
     {
       id: '1',
@@ -79,7 +79,7 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
   ];
 
   useEffect(() => {
-    // Check for stored user in localStorage
+    // Verificar usuario almacenado en localStorage
     const storedUser = localStorage.getItem('ecommerce_user');
     if (storedUser) {
       setUser(JSON.parse(storedUser));
@@ -90,7 +90,7 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
   const login = async (email: string, password: string): Promise<boolean> => {
     setIsLoading(true);
     
-    // Mock authentication - In production, make API call
+    // Autenticación de prueba
     const foundUser = mockUsers.find(u => u.email === email);
     
     if (foundUser && password === 'password123') {

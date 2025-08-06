@@ -134,7 +134,7 @@ export const Home = () => {
         </div>
       </section>
 
-      {/* Customer Reviews Section */}
+            {/* Sección de Reseñas */}
       <section className="py-16 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-12">

@@ -1,73 +1,104 @@
-# Welcome to your Lovable project
+# FlexiShop Forge
 
-## Project info
+Un e-commerce moderno y flexible construido con React, TypeScript y Tailwind CSS.
 
-**URL**: https://lovable.dev/projects/f035a9a4-da80-4195-a8d8-37c40b1c8be6
+## Características
 
-## How can I edit this code?
+- Interfaz moderna y responsiva
+- Sistema de autenticación completo
+- Carrito de compras funcional
+- Gestión de productos y categorías
+- Panel de perfil de usuario
+- Diseño optimizado para móviles
 
-There are several ways of editing your application.
+## Tecnologías Utilizadas
 
-**Use Lovable**
+- **React** - Biblioteca de interfaz de usuario
+- **TypeScript** - Tipado estático para JavaScript
+- **Vite** - Herramienta de construcción rápida
+- **Tailwind CSS** - Framework de CSS utilitario
+- **shadcn/ui** - Componentes de interfaz reutilizables
+- **React Router** - Enrutamiento del lado del cliente
+- **React Query** - Gestión de estado del servidor
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/f035a9a4-da80-4195-a8d8-37c40b1c8be6) and start prompting.
+## Instalación y Configuración
 
-Changes made via Lovable will be committed automatically to this repo.
+### Requisitos Previos
 
-**Use your preferred IDE**
+- Node.js (versión 16 o superior)
+- npm o yarn
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Pasos de Instalación
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+```bash
+# Clonar el repositorio
+git clone <URL_DEL_REPOSITORIO>
 
-Follow these steps:
+# Navegar al directorio del proyecto
+cd flexi-shop-forge
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Instalar dependencias
+npm install
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Iniciar el servidor de desarrollo
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### Scripts Disponibles
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- `npm run dev` - Inicia el servidor de desarrollo
+- `npm run build` - Construye la aplicación para producción
+- `npm run lint` - Ejecuta el linter para revisar el código
+- `npm run preview` - Previsualiza la construcción de producción
 
-**Use GitHub Codespaces**
+## Estructura del Proyecto
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```
+src/
+├── components/     # Componentes reutilizables
+├── pages/         # Páginas de la aplicación
+├── contexts/      # Contextos de React
+├── hooks/         # Hooks personalizados
+├── lib/           # Utilidades y configuraciones
+├── data/          # Datos mock y constantes
+└── App.tsx        # Componente principal
+```
 
-## What technologies are used for this project?
+## Funcionalidades
 
-This project is built with:
+### Autenticación
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- Inicio de sesión y registro
+- Gestión de sesiones
+- Protección de rutas
 
-## How can I deploy this project?
+### Tienda
 
-Simply open [Lovable](https://lovable.dev/projects/f035a9a4-da80-4195-a8d8-37c40b1c8be6) and click on Share -> Publish.
+- Catálogo de productos
+- Filtrado por categorías
+- Búsqueda de productos
+- Vista detallada de productos
 
-## Can I connect a custom domain to my Lovable project?
+### Carrito de Compras
 
-Yes, you can!
+- Agregar/remover productos
+- Actualización de cantidades
+- Persistencia en localStorage
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### Perfil de Usuario
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- Información personal
+- Historial de pedidos
+- Gestión de direcciones
+
+## Contribución
+
+1. Haz fork del proyecto
+2. Crea una rama para tu función (`git checkout -b feature/nueva-funcion`)
+3. Confirma tus cambios (`git commit -am 'Agregar nueva función'`)
+4. Sube la rama (`git push origin feature/nueva-funcion`)
+5. Abre un Pull Request
+
+## Licencia
+
+Este proyecto está bajo la Licencia MIT.

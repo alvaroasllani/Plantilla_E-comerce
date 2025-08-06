@@ -1,7 +1,7 @@
 import { Product } from '@/contexts/CartContext';
 
 export const mockProducts: Product[] = [
-  // Electronics
+  // Electrónicos
   {
     id: '1',
     name: 'Smartphone Pro Max 256GB',
@@ -50,7 +50,7 @@ export const mockProducts: Product[] = [
     reviews: 89
   },
   
-  // Fashion
+  // Moda
   {
     id: '4',
     name: 'Chaqueta de Cuero Premium',
